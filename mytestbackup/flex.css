@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c3bfbb;
+}
+
+.container, header, article, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+header, article, footer {
+    flex: 1 1 auto;
+}
+
+
+header {
+    background-color: #ce5707;
+    min-height: 20px;
+    border-bottom: 5px solid #35424a;
+    border-top: 5px solid #35424a;
+}
+
+header section #poem-text-title {
+    margin: auto; 
+    padding: 5px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    color: #fff0f0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    /* width: 90%; */
+    margin: 0 auto;
+    padding: 5px;
+    /* background-color: #35424a; */
+    border-bottom: 5px solid #ce5707;
+}
+
+nav section ol {
+    /* margin: auto;
+    text-align: center;
+    padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+
+nav section ol li {
+    /* display: inline; */
+    list-style: none;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+nav section ol li a {
+    background-color: #35424a;;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+}
+
+nav section ol li a:hover {
+    background-color: #ce5707;
+    font-size: 16.3px;
+    box-shadow: -2px 2px #35424a;
+}
+
+
+article {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #35424a;
+    border-bottom: 5px solid #ce5707;
+    
+}
+
+article section h3, article section h1  {
+    color: #ffffff;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+article section p {
+    color: #a18e8e;
+    font-size: 16px;
+    font-style: oblique;
+    padding: 10px;
+    text-align: center;
+}
+
+article section section {
+    display: flex;
+    justify-content: center;
+}
+
+
+.user-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+aside {
+    /* width: 100%; */
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    background-color: #ce5707;
+    border-bottom: 5px solid #35424a;
+}
+
+aside ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+aside ol li {
+    display: flex;
+    list-style: none;
+    color: #35424a;
+    font-size: 16px;
+    flex-wrap: wrap;
+    font-style: oblique;
+    padding: 5px;
+}

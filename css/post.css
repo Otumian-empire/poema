@@ -1,0 +1,174 @@
+/* This css is specifically designed for post, poems, etc */
+
+.post-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
+    padding: 10px;
+    /* background-color: #e46a4c; */
+}
+
+.post-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    /* background-color: #f00; */
+}
+
+.post-header-name-date {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #2810af; */
+    padding: 5px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.user-image {
+    width: 100px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.post-header-name-date h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.small-text {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    margin: 0 auto;
+    /* color: #fff0f0; */
+}
+
+.post-body ol, .post-footer ol {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.post-body ol li, .post-footer ol li {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.post-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #30af10; */
+}
+
+.post-body h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.post-body p {
+    display: flex;
+    padding: 5px;
+    text-align: center;
+}
+
+
+ol.post-body-tag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: #c818b9; */
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ol.post-body-tag li {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+
+.post-footer {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #18c8c0; */
+    justify-content: center;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.post-footer ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+.post-footer ol li {
+    padding: 4px;
+}
+
+.post-footer ol li span {
+    padding: 2px;
+}
+
+@media(max-with: 768px) {
+    .post-container {
+        width: 100%;
+        margin: 0;
+        /* background-color: #e46a4c; */
+    }
+    
+    .post-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .post-header-name-date {
+        margin: auto;
+    }
+
+    .user-image {
+        padding: 5px;
+    }
+
+    ol.post-body-tag {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ol.post-body-tag li {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+    }
+
+    .post-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .post-footer ol {
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+    }
+
+    .post-footer ol li span {
+        padding: 2px;
+    }
+}

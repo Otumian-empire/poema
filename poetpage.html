@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/homepage.css">
+        <link rel="stylesheet" href="./css/post.css">
+        <link rel="stylesheet" href="./css/modal.css">
+        <title>POEMA | Poet Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- header starts here -->
+            <header>
+                
+            </header>
+            <!-- header ends here -->
+
+
+            <!-- nav starts here -->
+            <nav>
+                <!-- has home, poems, poets, services, about as menus or page navigation -->
+                <section>
+                    <ol>
+                        <li><a href="./homepage.html" >Home</a></li>
+                        <li><a href="./poempage.html">Poems</a></li>
+                        <li><a href="./poetpage.html" class="active-tab">Poets</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About</a></li>
+                    </ol>
+                </section>
+            </nav>
+            <!-- nav ends here -->
+
+
+            <!-- article starts here -->
+            <article>
+                <section class="poets-nav">
+                    <button id="write-poem">Write poem</button>
+                </section>
+                <!-- Adding a modal for writing the poem -->
+                <!-- modal starts here -->
+                <section class="bg-modal" id="bg-modal">
+                    <section class="modal-content">
+                        <form action="" method="post">
+                            <p>Poema Poem Area</p>
+                            <label for="title">
+                                <input type="text" id="poem-title" placeholder="Theme ...">
+                            </label>
+                            <label for="poem-tags">
+                                    <input type="text" name="" id="poem-tags" placeholder="Separate tags with comma ...">
+                            </label>
+                            <label for="poem-content">
+                                <textarea name="" id="poem-content" placeholder="Enter poem here ..."></textarea>
+                                <!-- <input name="" type="text" id="poem-content" placeholder="enter poem here.."> -->
+                            </label>
+                            
+                            <button id="publish-poem">Publish</button>
+                        </form>
+                        <!-- this is the close button -->
+                        <section class="modal-close" id="modal-close">+</section>
+                    </section>
+                    
+                </section>
+                <!-- modal class ends here -->
+
+                <script>
+                    document.getElementById("write-poem").addEventListener("click", function() {
+                        document.getElementById("bg-modal").style.display = "flex";
+                    });
+
+                    document.getElementById("modal-close").addEventListener("click", function() {
+                        document.getElementById("bg-modal").style.display = "none";
+                    });
+
+                    // document.getElementById("bg-modal").addEventListener("click", function() {
+                    //     document.getElementById("bg-modal").style.display = "none";
+                    // });
+                </script>
+
+
+                <!-- modal ends here -->
+            </article>
+            <!-- article ends here -->
+
+
+            <!-- aside starts here -->
+            <aside>
+            
+            </aside>
+            <!-- aside ends here -->
+
+
+            <!-- footer starts here -->
+            <footer>
+                <!-- has home, poems, poets, services, about as links -->
+                <section>
+                    <ol>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Poems</a></li>
+                        <li><a href="">Poets</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About</a></li>
+                    </ol>
+                </section>
+            </footer>
+            <!-- footer ends here -->
+
+
+        </div>
+        
+    </body>
+
+</html>
